@@ -26,6 +26,7 @@ body {
   height: 620px;
   background-color: #f8f9fa;
   box-shadow: 0 0 10px -4px #777;
+  overflow: hidden;
 }
 .blockItem_intro {
   background-image: url('http://38.media.tumblr.com/61abeafda74782aa46accf635d3ffaa2/tumblr_n45wkqtexe1smtazbo1_500.jpg');
