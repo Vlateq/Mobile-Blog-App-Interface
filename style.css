@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;  
+}
+
+body {
+  background-color: #DBE2EC;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.blockItem {
+  position: relative;
+  width: 350px;
+  max-width: 33%;
+  height: 620px;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 10px -4px #777;
+}
+.blockItem_intro {
+  background-image: url('http://38.media.tumblr.com/61abeafda74782aa46accf635d3ffaa2/tumblr_n45wkqtexe1smtazbo1_500.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  color: #fff;
+}
+
+.blockItem__content {
+  padding: 30px;
+  width: 100%;
+}
+.blockItem__content_bottomAligned {
+  position: absolute;
+  bottom: 52px;
+}
+
+.blockItem__comment {
+  display: flex;
+}
+
+.blockItem__author {
+  font-size: 16px;
+  padding: 0 0 10px 0;
+}
+
+.blockItem__heading {
+  font-weight: bold;
+  font-size: 55px; 
+}
+.blockItem__heading_moreVisible {
+  background-color: rgba(200, 200, 200, 0.5);
+  margin: 0 -30px 15px;
+  padding: 0 30px;
+}
+
+.blockItem__tag {
+  background-color: #fff;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #777;
+}
+
+.blockItem__text {
+  line-height: 1.8em;
+  font-size: 15px;
+  color: #777;
+}
+.blockItem__text p {
+  margin-bottom: 10px;
+}
+
+.blockItem__footer {
+  position: absolute;
+  bottom: 0;
+  height: 52px;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #fff;
+  line-height: 52px;
+  text-align: center;
+  user-select: none;
+  cursor: default;
+}
+.blockItem__footer div {
+  flex: 1;
+}
+.blockItem__footer div:hover {
+  background-color: #eee;
+}
+
+.blockItem__closeBtn {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+}
+
+.blockItem__dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #777;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.blockItem__dot_active, .blockItem__dot:hover {
+  background-color: #000;
+}
+
+.blockItem__commentLogo {
+  height: 100%;
+  background-image: url('https://cdn0.iconfinder.com/data/icons/essentials-9/128/__Message-16.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.text__capital {
+  float: left;
+  font-size: 80px;
+  line-height: 1em;
+  padding: 0 15px 0 0;
+  color: #444;
+}
+
+.blockItem__header {
+  padding: 15px 0;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.header__title {
+  flex: 2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blockItem__closeBtn_cross {
+  font-weight: normal;
+  font-size: 30px;
+  position: absolute;
+  right: 20px; 
+}
+
+.blockItem__comment {
+  margin: 0 0 30px 0;
+}
+.blockItem__comment::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.blockItem__photo img {
+  float: left;
+  width: 45px;
+  margin-right: 15px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.blockItem__author_comment {
+  display: inline-block;
+  font-size: 12px;
+}
+.blockItem__author_comment::after {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  width: 2px;
+  height: 2px;
+  margin: 0 6px 0 12px;;
+  background-color: #777;
+  border-radius: 50%;
+}
+
+.blockItem__commentText {
+  max-height: 100px;
+  overflow: hidden;
+  color: #777;
+  line-height: 1.5em;
+}
+.blockItem__commentText_long {
+  position: relative;
+}
+.blockItem__commentText_long::after {
+  content: 'more';
+  display: inline-block;
+  width: 50px;
+  height: 17px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #777;
+  border-radius: 4px 4px 0 0;
+  color: #fff;
+}
+.blockItem__commentText_long::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(248, 249, 250, 0.8);
+}
+
+.blockItem__date {
+  display: inline-block;
+  color: #aaa;
+  font-size: 12px;
+}
